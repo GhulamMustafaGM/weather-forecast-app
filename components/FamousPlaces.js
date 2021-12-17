@@ -3,14 +3,25 @@ import Image from "next/image";
 import Link from "next/link";
 
 // import images
+import DubaiImage from "../public/images/dubai.jpg";
+import IslamabadImage from "../public/images/islamabad.jpg";
 import LondonImage from "../public/images/london.jpg";
 import ParisImage from "../public/images/paris.jpg";
 import StockholmImage from "../public/images/stockholm.jpg";
-import DubaiImage from "../public/images/dubai.jpg";
 import TokyoImage from "../public/images/tokyo.jpg";
 import NewYorkImage from "../public/images/new-york.jpg";
 
 const places = [
+  {
+    name: "Dubai",
+    image: DubaiImage,
+    url: "/location/dubai-292223",
+  },
+  {
+    name: "Islamabad",
+    image: IslamabadImage,
+    url: "/location/islamabad-1162015",
+  },
   {
     name: "London",
     image: LondonImage,
@@ -26,11 +37,7 @@ const places = [
     image: StockholmImage,
     url: "/location/stockholm-2673722",
   },
-  {
-    name: "Dubai",
-    image: DubaiImage,
-    url: "/location/dubai-292223",
-  },
+
   {
     name: "Tokyo",
     image: TokyoImage,
