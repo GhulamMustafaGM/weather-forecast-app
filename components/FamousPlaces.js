@@ -5,6 +5,8 @@ import Link from "next/link";
 // import images
 import LondonImage from "../public/images/london.jpg";
 import ParisImage from "../public/images/paris.jpg";
+import StockholmImage from "../public/images/stockholm.jpg";
+import DubaiImage from "../public/images/dubai.jpg";
 import TokyoImage from "../public/images/tokyo.jpg";
 import NewYorkImage from "../public/images/new-york.jpg";
 
@@ -18,6 +20,16 @@ const places = [
     name: "Paris",
     image: ParisImage,
     url: "/location/paris-2968815",
+  },
+  {
+    name: "Stockholm",
+    image: StockholmImage,
+    url: "/location/stockholm-2673722",
+  },
+  {
+    name: "Dubai",
+    image: DubaiImage,
+    url: "/location/dubai-292223",
   },
   {
     name: "Tokyo",
