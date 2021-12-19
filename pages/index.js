@@ -10,7 +10,7 @@ export default function Home() {
       </Head>
       <div className="home">
         <div className="container">
-          <SearchBox placeholder="Search for a city..." />
+          <SearchBox placeholder="Type for a city..." />
           <FavoritePlaces />
         </div>
       </div>

@@ -89,9 +89,10 @@ export default function City({
       <div className="page-wrapper">
         <div className="container">
           <Link href="/">
+            {/* arrow=> $larr */}
             <a className="back-link">&larr; Home</a>
           </Link>
-          <SearchBox placeholder="Search your favorite location..." />
+          <SearchBox placeholder="Search your favorite city..." />
           <TodaysWeather
             city={city}
             weather={weeklyWeather[0]}
