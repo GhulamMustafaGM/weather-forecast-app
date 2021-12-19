@@ -6,7 +6,7 @@ export default function WeeklyWeather({ weeklyWeather, timezone }) {
   return (
     <div className="weekly">
       <h3 className="weekly__title">
-        Weekly <span>Weather</span>
+        7-Day <span>weather forecast</span>
       </h3>
 
       {weeklyWeather.length > 0 &&
@@ -25,8 +25,8 @@ export default function WeeklyWeather({ weeklyWeather, timezone }) {
                     </h3>
 
                     <h4>
-                      <span>{weather.temp.max.toFixed(0)}&deg;C</span>
-                      <span>{weather.temp.min.toFixed(0)}&deg;C</span>
+                      <span>{weather.temp.max.toFixed(0)}&deg;F</span>
+                      <span>{weather.temp.min.toFixed(0)}&deg;F</span>
                     </h4>
                   </div>
 

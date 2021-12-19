@@ -12,8 +12,8 @@ export default function TodaysWeather({ city, weather, timezone }) {
           </h1>
 
           <h2>
-            <span>{weather.temp.max.toFixed(0)}&deg;C</span>
-            <span>{weather.temp.min.toFixed(0)}&deg;C</span>
+            <span>{weather.temp.max.toFixed(0)}&deg;F</span>
+            <span>{weather.temp.min.toFixed(0)}&deg;F</span>
           </h2>
 
           <div className="today__sun-times">

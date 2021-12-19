@@ -18,7 +18,7 @@ export async function getServerSideProps(context) {
   }
 
   const res = await fetch(
-    `https://api.openweathermap.org/data/2.5/onecall?lat=${city.coord.lat}&lon=${city.coord.lon}&appid=${process.env.API_KEY}&exclude=minutely&units=metric`
+    `https://api.openweathermap.org/data/2.5/onecall?lat=${city.coord.lat}&lon=${city.coord.lon}&appid=${process.env.API_KEY}&exclude=minutely&units=imperial`
   );
 
   const data = await res.json();
@@ -91,14 +91,20 @@ export default function City({
           <Link href="/">
             <a className="back-link">&larr; Home</a>
           </Link>
-          <SearchBox placeholder="Search for another location..." />
+          <SearchBox placeholder="Search your favorite location..." />
           <TodaysWeather
             city={city}
             weather={weeklyWeather[0]}
             timezone={timezone}
           />
-          <HourlyWeather hourlyWeather={hourlyWeather} timezone={timezone} />
-          <WeeklyWeather weeklyWeather={weeklyWeather} timezone={timezone} />
+          <HourlyWeather
+            hourlyWeather={ hourlyWeather }
+            timezone={ timezone }
+          />
+          <WeeklyWeather
+            weeklyWeather={ weeklyWeather }
+            timezone={ timezone }
+          />
         </div>
       </div>
     </>
