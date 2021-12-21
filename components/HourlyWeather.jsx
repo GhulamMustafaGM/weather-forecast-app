@@ -31,7 +31,7 @@ export default function HourlyWeather({ hourlyWeather, timezone }) {
                     height="100"
                   />
 
-                  <span>{weather.temp.toFixed(0)}&deg;F</span>
+                  <span>{weather.temp.toFixed(0)}&deg;C</span>
                 </div>
               </div>
             ))}
